@@ -1,0 +1,438 @@
+!SESSION 2019-04-29 10:30:56.119 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-29 10:31:07.374
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\logonrmlocal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:20.875
+!MESSAGE Failed to decrypt password for server central: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+!STACK 0
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121)
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107)
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:547)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90)
+	... 7 more
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56)
+	... 9 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:20.936
+!MESSAGE Failed to decrypt password for server snapshots: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+!STACK 0
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121)
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107)
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:547)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90)
+	... 7 more
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56)
+	... 9 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:21.013
+!MESSAGE Failed to decrypt password for server central: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+!STACK 0
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121)
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107)
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:547)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90)
+	... 7 more
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56)
+	... 9 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:21.015
+!MESSAGE Failed to decrypt password for server snapshots: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+!STACK 0
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121)
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107)
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:547)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90)
+	... 7 more
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56)
+	... 9 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:27.571
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:27.574
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:35.110
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:35.120
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:35.605
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:35.607
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:36.088
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:36.090
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.342
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.344
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.696
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.698
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.731
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.734
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.765
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.768
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.800
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.801
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.836
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:39.838
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:40.267
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:31:40.268
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:41:57.573
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:41:57.575
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface.text 2 0 2019-04-29 10:42:22.129
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-04-29 10:42:22.130
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-04-29 10:42:22.193
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-04-29 10:42:22.194
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:42:22.457
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:42:22.462
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:42:30.317
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:42:30.318
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:42:35.478
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:42:35.479
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:43:14.941
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:43:14.943
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:43:25.030
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:43:25.031
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:05.580
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:05.581
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:11.146
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:11.148
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:24.120
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:24.121
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:33.002
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:33.003
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:41.190
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:41.192
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:52.142
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:47:52.145
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:48:11.011
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:48:11.012
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:48:42.949
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:48:42.950
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:48:48.463
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:48:48.465
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:48:57.565
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:48:57.567
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:49:16.030
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:49:16.034
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:49:24.982
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:49:24.983
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:49:33.027
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:49:33.029
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:49:43.641
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:49:43.642
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:49:50.354
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:49:50.356
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:50:37.771
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:50:37.772
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:50:37.877
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:50:37.877
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:50:38.126
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:50:38.127
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:50:38.244
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:50:38.246
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:50:48.376
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 10:50:48.378
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:26:31.289
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:26:31.291
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:05.496
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:05.497
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:18.350
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:18.351
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:20.874
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:20.876
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:22.486
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:22.487
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:44.754
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:44.755
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:47.396
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:32:47.398
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:33:14.307
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:33:14.309
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:38:09.245
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:38:09.246
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:50:02.586
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:50:02.588
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:51:41.766
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:51:41.768
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:53:39.173
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:53:39.174
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:53:44.439
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:53:44.440
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:56:26.161
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:56:26.162
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:56:48.756
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-04-29 11:56:48.757
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

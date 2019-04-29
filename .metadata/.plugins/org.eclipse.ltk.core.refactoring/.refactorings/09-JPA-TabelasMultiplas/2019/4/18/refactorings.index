@@ -1,0 +1,10 @@
+1556545394705	Delete elements
+1556545790232	Rename type 'ConsultDAOImpl'
+1556546177695	Encapsulate field 'especialidade'
+1556546182028	Encapsulate field 'nome'
+1556546185129	Encapsulate field 'crm'
+1556546537651	Encapsulate field 'codigo'
+1556546541708	Encapsulate field 'nome'
+1556546544729	Encapsulate field 'endereco'
+1556547960635	Encapsulate field 'convenio'
+1556547965107	Encapsulate field 'valorConsulta'

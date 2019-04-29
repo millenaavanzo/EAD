@@ -1,0 +1,26 @@
+package br.com.fiap.teste;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import javax.persistence.EntityManager;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import br.com.fiao.dao.impl.ConsultaDAOImpl;
+import br.com.fiap.singleton.EntityManagerFactorySingleton;
+
+class TesteCadastro {
+private static ConsultaDAO dao;
+	
+	@BeforeAll
+	public static void init() {
+	EntityManager em = EntityManagerFactorySingleton.getInstance().createEntityManager();
+	dao = new ConsultaDAOImpl(em);
+	}
+	@Test
+	void cadastrar() {
+		fail("Not yet implemented");
+	}
+
+}
